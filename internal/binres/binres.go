@@ -250,14 +250,14 @@ func UnmarshalXML(r io.Reader, withIcon bool) (*XML, error) {
 							Space: "",
 							Local: "platformBuildVersionCode",
 						},
-						Value: fmt.Sprintf("%v", MinSDK),
+						Value: fmt.Sprintf("%v", 34),
 					},
 					xml.Attr{
 						Name: xml.Name{
 							Space: "",
 							Local: "platformBuildVersionName",
 						},
-						Value: "4.1.2-1425332",
+						Value: "14",
 					})
 
 				q = append(q, ltoken{tkn, line})
