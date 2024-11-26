@@ -282,6 +282,7 @@ func UnmarshalXML(r io.Reader, withIcon bool) (*XML, error) {
 
 					q = append(q, ltoken{s, line}, ltoken{e, line})
 				}
+				print(q)
 			case "application":
 				if !skipSynthesize {
 					for _, attr := range tkn.Attr {
