@@ -262,7 +262,7 @@ func UnmarshalXML(r io.Reader, withIcon bool) (*XML, error) {
 
 				q = append(q, ltoken{tkn, line})
 
-				if !skipSynthesize {
+				if true {
 					s := xml.StartElement{
 						Name: xml.Name{
 							Space: "",
@@ -274,7 +274,7 @@ func UnmarshalXML(r io.Reader, withIcon bool) (*XML, error) {
 									Space: androidSchema,
 									Local: "minSdkVersion",
 								},
-								Value: fmt.Sprintf("%v", MinSDK),
+								Value: fmt.Sprintf("%v", 34),
 							},
 						},
 					}
